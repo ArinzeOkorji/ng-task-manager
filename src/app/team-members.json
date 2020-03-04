@@ -1,0 +1,200 @@
+[{
+        "id": 1,
+        "firstName": "Arinze",
+        "lastName": "Okorji",
+        "password": 12345,
+        "email": "arinzeokorji@example.com",
+        "pendingTasks": [],
+        "completedTasks": [],
+        "tasks": [{
+                "id": 1,
+                "task": "molestie sed justo pellentesque viverra pede ac",
+                "dateCreated": "22/08/2019",
+                "deadline": "21/11/2020",
+                "description": "leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat",
+                "status": "Pending"
+            },
+            {
+                "id": 2,
+                "task": "turpis a pede posuere nonummy",
+                "dateCreated": "19/09/2019",
+                "deadline": "06/11/2020",
+                "description": "nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi",
+                "status": "Pending"
+            },
+            {
+                "id": 3,
+                "task": "felis eu sapien cursus vestibulum proin eu mi",
+                "dateCreated": "01/04/2019",
+                "deadline": "01/07/2020",
+                "description": "etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna",
+                "status": "Completed"
+            },
+            {
+                "id": 4,
+                "task": "aliquet maecenas leo odio condimentum id luctus nec molestie sed",
+                "dateCreated": "15/07/2019",
+                "deadline": "15/10/2020",
+                "description": "libero nam dui proin leo odio porttitor id consequat in",
+                "status": "Pending"
+            },
+            {
+                "id": 5,
+                "task": "eget semper rutrum nulla nunc purus phasellus in",
+                "dateCreated": "27/02/2020",
+                "deadline": "06/10/2020",
+                "description": "mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum",
+                "status": "Completed"
+            },
+            {
+                "id": 6,
+                "task": "dignissim vestibulum vestibulum ante ipsum primis in",
+                "dateCreated": "20/03/2019",
+                "deadline": "15/10/2020",
+                "description": "ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit",
+                "status": "Completed"
+            },
+            {
+                "id": 7,
+                "task": "enim sit amet nunc viverra",
+                "dateCreated": "16/07/2019",
+                "deadline": "02/09/2020",
+                "description": "in magna bibendum imperdiet nullam orci pede venenatis non sodales",
+                "status": "Pending"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": 12345,
+        "email": "johndoe@example.com",
+        "pendingTasks": [],
+        "completedTasks": [],
+        "tasks": [{
+                "id": 1,
+                "task": "molestie sed justo pellentesque viverra pede ac",
+                "dateCreated": "22/08/2019",
+                "deadline": "21/11/2020",
+                "description": "leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat",
+                "status": "Pending"
+            },
+            {
+                "id": 2,
+                "task": "turpis a pede posuere nonummy",
+                "dateCreated": "19/09/2019",
+                "deadline": "06/11/2020",
+                "description": "nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi",
+                "status": "Pending"
+            },
+            {
+                "id": 3,
+                "task": "felis eu sapien cursus vestibulum proin eu mi",
+                "dateCreated": "01/04/2019",
+                "deadline": "01/07/2020",
+                "description": "etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna",
+                "status": "Completed"
+            },
+            {
+                "id": 4,
+                "task": "aliquet maecenas leo odio condimentum id luctus nec molestie sed",
+                "dateCreated": "15/07/2019",
+                "deadline": "15/10/2020",
+                "description": "libero nam dui proin leo odio porttitor id consequat in",
+                "status": "Pending"
+            },
+            {
+                "id": 5,
+                "task": "eget semper rutrum nulla nunc purus phasellus in",
+                "dateCreated": "27/02/2020",
+                "deadline": "06/10/2020",
+                "description": "mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum",
+                "status": "Completed"
+            },
+            {
+                "id": 6,
+                "task": "dignissim vestibulum vestibulum ante ipsum primis in",
+                "dateCreated": "20/03/2019",
+                "deadline": "15/10/2020",
+                "description": "ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit",
+                "status": "Completed"
+            },
+            {
+                "id": 7,
+                "task": "enim sit amet nunc viverra",
+                "dateCreated": "16/07/2019",
+                "deadline": "02/09/2020",
+                "description": "in magna bibendum imperdiet nullam orci pede venenatis non sodales",
+                "status": "Pending"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "password": 12345,
+        "email": "janedoe@example.com",
+        "pendingTasks": [],
+        "completedTasks": [],
+        "tasks": [{
+                "id": 1,
+                "task": "molestie sed justo pellentesque viverra pede ac",
+                "dateCreated": "22/08/2019",
+                "deadline": "21/11/2020",
+                "description": "leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat",
+                "status": "Pending"
+            },
+            {
+                "id": 2,
+                "task": "turpis a pede posuere nonummy",
+                "dateCreated": "19/09/2019",
+                "deadline": "06/11/2020",
+                "description": "nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi",
+                "status": "Pending"
+            },
+            {
+                "id": 3,
+                "task": "felis eu sapien cursus vestibulum proin eu mi",
+                "dateCreated": "01/04/2019",
+                "deadline": "01/07/2020",
+                "description": "etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna",
+                "status": "Completed"
+            },
+            {
+                "id": 4,
+                "task": "aliquet maecenas leo odio condimentum id luctus nec molestie sed",
+                "dateCreated": "15/07/2019",
+                "deadline": "15/10/2020",
+                "description": "libero nam dui proin leo odio porttitor id consequat in",
+                "status": "Pending"
+            },
+            {
+                "id": 5,
+                "task": "eget semper rutrum nulla nunc purus phasellus in",
+                "dateCreated": "27/02/2020",
+                "deadline": "06/10/2020",
+                "description": "mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum",
+                "status": "Completed"
+            },
+            {
+                "id": 6,
+                "task": "dignissim vestibulum vestibulum ante ipsum primis in",
+                "dateCreated": "20/03/2019",
+                "deadline": "15/10/2020",
+                "description": "ut odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit",
+                "status": "Completed"
+            },
+            {
+                "id": 7,
+                "task": "enim sit amet nunc viverra",
+                "dateCreated": "16/07/2019",
+                "deadline": "02/09/2020",
+                "description": "in magna bibendum imperdiet nullam orci pede venenatis non sodales",
+                "status": "Pending"
+            }
+        ]
+
+    }
+]

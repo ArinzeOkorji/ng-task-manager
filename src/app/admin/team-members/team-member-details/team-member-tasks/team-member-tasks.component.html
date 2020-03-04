@@ -1,0 +1,25 @@
+<div class='main'>
+    <ul class="list-of-details" *ngFor="let task of filteredTasks">
+        <li>
+            <span class='detail-title'>Task</span>
+            <span>{{task.task}}</span>
+        </li>
+        <li>
+            <div>
+                <div>
+                    <span class='detail-title'>Date created</span>
+                    <span>{{task.dateCreated}}</span>
+                </div>
+                <div>
+                    <span class='detail-title'>Deadline</span>
+                    <span>{{task.deadline}}</span>
+                </div>
+            </div>
+
+        </li>
+        <li>
+            <span class="detail-title">Description</span>
+            <span class="">{{task.description}}</span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-lg-{{teamMembersService.teamMembersColumnWidth}}">
+        <div class="panel">
+            <button routerLink='create-team-member'>Create New Team Member</button>
+            <input type="text" placeholder="Find team member">
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Tasks Completed</th>
+                        <th>Tasks Pending</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor='let task of tasks' (click)='showTaskDetails(task)'>
+                      <td>{{task?.task}}</td>
+                      <td>{{task?.assignedTo}}</td>
+                      <td>{{task?.status}}</td>
+                  </tr> -->
+                    <tr *ngFor="let teamMember of teamMembers" (click)='showTeamMemberDetails(teamMember.id)'>
+                        <td>{{teamMember.firstName + ' ' + teamMember.lastName}}</td>
+                        <td>{{teamMember.completedTasks.length}}</td>
+                        <td>{{teamMember.pendingTasks.length}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-lg-{{teamMembersService.teamMembersDetailsColumnWidth}}">
+        <router-outlet></router-outlet>
+    </div>
+</div>

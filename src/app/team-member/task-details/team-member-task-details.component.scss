@@ -1,0 +1,122 @@
+@mixin for-sm {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-lg {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+.main {
+    height: 95.2%;
+    @include for-sm {
+        height: 95.2%;
+        z-index: 999;
+        top: 38vh;
+        position: fixed;
+        width: 100%;
+    }
+    @include for-lg {
+        background-color: #3e266a;
+        padding: 15px;
+    }
+}
+
+.back-drop {
+    @include for-sm {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: #00000096;
+        top: 0;
+    }
+    @include for-lg {
+        position: unset;
+        display: none;
+    }
+}
+
+.white-card {
+    background-color: #fff;
+    height: 96%;
+    @include for-sm {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    @include for-lg {
+        position: relative;
+        top: -70px;
+    }
+    .header {
+        border-bottom: 1px solid #666666;
+        padding: 10px 15px;
+        display: flex;
+        span {
+            margin-left: auto;
+            cursor: pointer;
+        }
+    }
+    .container {
+        @include for-sm {
+            height: 53%;
+            overflow-y: scroll;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+ul.list-of-details {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 15px;
+    padding-bottom: 0;
+    li {
+        margin-bottom: 25px;
+        span {
+            display: block;
+        }
+        span.detail-title {
+            color: #3e266a;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        >div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+form {
+    padding: 0 15px;
+    div.status {
+        margin-bottom: 30px;
+    }
+    label {
+        color: #3e266a;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15px;
+    button {
+        padding: 18px 46px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button.update-btn {
+        background-color: rgba(19, 27, 234, 0.24);
+        color: rgb(19, 27, 234);
+    }
+}

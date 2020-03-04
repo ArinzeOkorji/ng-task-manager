@@ -1,0 +1,17 @@
+<div class='main'>
+    <div class="white-card">
+        <div class="header">
+            <span (click)='close()'>Close &times;</span>
+        </div>
+
+        <ul class="tab-list">
+            <li class="tab" routerLink='profile' routerLinkActive='active'>Profile</li>
+            <li class="tab" routerLink='task/pending' routerLinkActive='active'>Pending</li>
+            <li class="tab" routerLink='task/completed' routerLinkActive='active'>Completed</li>
+        </ul>
+
+        <div class='child-container'>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

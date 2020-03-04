@@ -1,0 +1,61 @@
+.main {
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
+    h1 {
+        color: #3e226a;
+        margin-bottom: 50px;
+    }
+    form {
+        width: 100%;
+        >div.form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 27px;
+            >div {
+                width: 45%;
+            }
+        }
+        label {
+            color: #3e226a;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        select {
+            padding: 5px 71px;
+            padding-left: 10px;
+        }
+        input,
+        textarea,
+        select {
+            padding: 5px 0px 5px 10px;
+            border: 1px solid #3e226a;
+            width: 100%;
+        }
+    }
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 15px;
+    margin-top: 30px;
+    button {
+        padding: 19px 20px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        width: 31%;
+        font-size: 20px;
+    }
+    button.cancel-btn {
+        background-color: rgba(197, 27, 27, 0.24);
+        color: rgb(197, 27, 27);
+    }
+    button.submit-btn {
+        background-color: rgba(19, 27, 234, 0.24);
+        color: rgb(19, 27, 234);
+    }
+}

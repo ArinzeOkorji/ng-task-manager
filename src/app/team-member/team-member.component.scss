@@ -1,0 +1,114 @@
+@mixin for-sm {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin for-lg {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+.header {
+    background-color: #3e266c;
+    color: #fff;
+    padding: 15px;
+    padding-bottom: 70px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    @include for-lg {
+        justify-content: space-between;
+    }
+}
+
+.col-lg-12 {
+    @include for-lg {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+.col-sm-12 {
+    @include for-sm {
+        width: 100%;
+    }
+}
+
+.col-sm-12.addMobilePadding {
+    @include for-sm {
+        padding: 0 15px;
+    }
+}
+
+.col-lg-7 {
+    @include for-lg {
+        width: 58.33%;
+        padding: 0 15px;
+    }
+}
+
+.col-lg-4 {
+    @include for-lg {
+        width: 33.33%;
+        padding: 0 15px;
+        padding-right: 0;
+    }
+}
+
+.col-lg-0 {
+    @include for-lg {
+        display: none;
+    }
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    select {
+        padding: 5px 15px;
+        border-color: #3e266c;
+    }
+}
+
+.table-container {
+    height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.16);
+    position: relative;
+    top: -52px;
+    background-color: #fff;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        th {
+            color: #3e266c;
+            font-weight: bold;
+            padding: 15px 0;
+        }
+        tr {
+            td:first-child,
+            th:first-child {
+                padding-left: 7px;
+            }
+        }
+        tbody {
+            tr:nth-child(2n-1) {
+                background-color: #9AC1E0;
+            }
+            tr {
+                cursor: pointer;
+            }
+            td {
+                padding: 15px 0;
+            }
+        }
+    }
+}

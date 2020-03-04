@@ -1,0 +1,51 @@
+<div class="back-drop"></div>
+<div class='main'>
+    <div class="white-card">
+        <div class="header">
+            <span (click)='close()'>Close &times;</span>
+        </div>
+        <div class="container">
+            <ul class="list-of-details">
+                <li>
+                    <span class='detail-title'>Task</span>
+                    <span>{{task.task}}</span>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <span class='detail-title'>Date created</span>
+                            <span>{{task.dateCreated}}</span>
+                        </div>
+                        <div>
+                            <span class='detail-title'>Deadline</span>
+                            <span>{{task.deadline}}</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <span class="detail-title">Description</span>
+                    <span class="">{{task.description}}</span>
+                </li>
+                <!-- <li>
+                    <span class="detail-title">Status</span>
+                    <span class="">{{task.status}}</span>
+                </li> -->
+            </ul>
+            <form>
+                <div class='status'>
+                    <label for="status">Status</label>
+                    <select name="status" id="status" #select select.value='task.status'>
+                <option value="Pending" #pending>Pending</option>
+                <option value="Completed" #completed>Completed</option>
+              </select>
+                </div>
+                <div class="btn-group">
+                    <button class='update-btn'>Update task</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class='header'>
+    <h1>Arinze's Dashboard</h1>
+</div>
+
+<div class="row">
+    <div class="col-lg-{{teamMemberService.tasksColumnWidth}} col-sm-12 addMobilePadding">
+        <!-- <div class="panel">
+          <select name="" id="" #select (click)='filterTasks(select.value)'>
+      <option value="all">All</option>
+      <option value="Completed">Completed</option>
+      <option value="Pending">Pending</option>
+    </select>
+      </div> -->
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let task of tasks' (click)='showTaskDetails(task.id)'>
+                        <td>{{task?.task}}</td>
+                        <td>{{task?.deadline}}</td>
+                        <td>{{task?.status}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-lg-{{teamMemberService.taskDetailsColumnWidth}} col-sm-12">
+        <router-outlet></router-outlet>
+    </div>
+</div>

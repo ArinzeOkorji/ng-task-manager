@@ -1,0 +1,41 @@
+ul.list-of-details {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 15px;
+    li {
+        margin-bottom: 25px;
+        span {
+            display: block;
+        }
+        span.detail-title {
+            color: #3e266a;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        >div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    button {
+        padding: 10px 20px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    button.delete-btn {
+        background-color: rgba(197, 27, 27, 0.24);
+        color: rgb(197, 27, 27);
+    }
+    button.edit-btn {
+        background-color: rgba(19, 27, 234, 0.24);
+        color: rgb(19, 27, 234);
+    }
+}

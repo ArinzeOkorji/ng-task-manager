@@ -1,0 +1,43 @@
+<div class='main'>
+    <div class="white-card">
+        <div class="header">
+            <span (click)='close()'>Close &times;</span>
+        </div>
+        <ul class="list-of-details">
+            <li>
+                <span class='detail-title'>Task</span>
+                <span>{{task.task}}</span>
+            </li>
+            <li>
+                <span class='detail-title'>Assigned to</span>
+                <span>{{task.assignedTo}}</span>
+            </li>
+            <li>
+                <div>
+                    <div>
+                        <span class='detail-title'>Date created</span>
+                        <span>{{task.dateCreated}}</span>
+                    </div>
+                    <div>
+                        <span class='detail-title'>Deadline</span>
+                        <span>{{task.deadline}}</span>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <span class="detail-title">Description</span>
+                <span class="">{{task.description}}</span>
+            </li>
+            <li>
+                <span class="detail-title">Status</span>
+                <span class="">{{task.status}}</span>
+            </li>
+        </ul>
+
+        <div class="btn-group">
+            <button class="delete-btn">Delete task</button>
+            <button class='edit-btn' (click)='editTask(task.id)'>Edit task</button>
+        </div>
+    </div>
+</div>

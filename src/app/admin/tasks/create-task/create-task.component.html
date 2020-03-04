@@ -1,0 +1,42 @@
+<div class="main">
+    <h1>{{this.tasksService.createOrEditStatus}} Task</h1>
+    <form ngSubmit=''>
+        <div class='form-group'>
+            <div>
+                <label for="task">Task</label>
+                <input type="text" id='task' name='task' [(ngModel)]='taskName'>
+            </div>
+            <div>
+                <label for="assigned-to">Assigned to</label>
+                <select name="assigned-to" id="assigned-to" name="assignedTo">
+        <option value="">Ade</option>
+        <option value="">Bisi</option>
+        <option value="">Emeka</option>
+        <option value="">Arinze</option>
+      </select>
+            </div>
+        </div>
+        <div class='form-group'>
+            <div>
+                <label for="status">Status</label>
+                <select name="status" id="status">
+                  <option value="">Set status</option>
+                  <option value="pending" #pending>Pending</option>
+                  <option value="completed" #completed>Completed</option>
+                </select>
+            </div>
+            <div>
+                <label for="deadline">Deadline</label>
+                <input type="date" id='deadline' [(ngModel)]='deadline' name='deadline'>
+            </div>
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="30" rows="10" [value]='description'></textarea>
+        </div>
+        <div class="btn-group">
+            <button class='cancel-btn' type="button" routerLink='/admin/tasks'>Cancel</button>
+            <button class='submit-btn' type="submit">Submit</button>
+        </div>
+    </form>
+</div>

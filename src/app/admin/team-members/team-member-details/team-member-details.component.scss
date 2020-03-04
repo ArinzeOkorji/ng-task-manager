@@ -1,0 +1,47 @@
+.main {
+    background-color: #3e266a;
+    padding: 15px;
+    height: 95.2%;
+}
+
+.white-card {
+    background-color: #fff;
+    height: 100%;
+    .header {
+        border-bottom: 1px solid #666666;
+        padding: 10px 15px;
+        display: flex;
+        span {
+            margin-left: auto;
+            cursor: pointer;
+        }
+    }
+}
+
+ul.tab-list {
+    padding: 0 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 15px;
+    li {
+        padding: 11px 16px;
+        color: #fff;
+        background-color: #3e266a;
+        cursor: pointer;
+        flex: 1;
+        text-align: center;
+    }
+    li.active {
+        color: #3e266a;
+        background-color: #fff;
+        border: 1px solid #3e266a;
+    }
+}
+
+.child-container {
+    height: 78%;
+    margin-top: 30px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,29 @@
+<div class="main">
+    <h1>Create Team Member</h1>
+    <form ngSubmit=''>
+        <div class='form-group'>
+            <div>
+                <label for="firstName">First name</label>
+                <input type="text" id='firstName' name='firstName' [(ngModel)]='taskName'>
+            </div>
+            <div>
+                <label for="lastName">Last name</label>
+                <input type="text" id='lastName' name='lastName' [(ngModel)]='taskName'>
+            </div>
+        </div>
+        <div class='form-group'>
+            <div>
+                <label for="email">Email address</label>
+                <input type="email" id='email' name='email' [(ngModel)]='taskName'>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id='password' name='password' [(ngModel)]='taskName'>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button class='cancel-btn' type="button" routerLink='/admin/tasks'>Cancel</button>
+            <button class='submit-btn' type="submit">Submit</button>
+        </div>
+    </form>
+</div>
